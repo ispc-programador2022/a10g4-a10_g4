@@ -6,6 +6,7 @@ from Modulo import ModuloDosParametros
 from Producto2P import ProductoDosParametros
 from Suma import Suma
 from Resta import Resta
+from SumaYproducto import SumaProducto
 
 if "A10G4" == __name__:
     print('-----------------\n|    GRUPO 4    |\n-----------------\n')
@@ -22,3 +23,8 @@ if "A10G4" == __name__:
         print(CocienteDosParametros.Cociente2P(entero1,entero2))
         print(ModuloDosParametros.Modulo(entero1,entero2))
     print(ProductoDosParametros.Producto2P(entero1,entero2))
+
+    #US5- Funciones varias de suma, resta y producto
+    print("Retorna el producto de los numeros, más el 1er numero ingresado: ", SumaProducto.productoSuma(entero1, entero2, entero1))
+    print("Retorna la suma de los numeros, por el 1er numero ingresado: ", SumaProducto.sumaProducto(entero1, entero2, entero1))
+    print("Retorna la resta de los numeros, por el 1er numero ingresado: ", SumaProducto.restaProducto(entero1, entero2, entero1))
